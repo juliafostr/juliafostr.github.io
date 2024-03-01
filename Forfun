@@ -1,0 +1,24 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Define the range of x values (number of units sold)
+x = np.arange(0, 30001, 1000)
+
+# Define the equations for total cost (TC) and total revenue (TR)
+TC = 9200 + 0.70 * x
+TR = 0.90 * x
+
+# Plot the total cost and total revenue lines
+plt.figure(figsize=(10, 6))
+plt.plot(x, TC, label='Total Cost', color='blue')
+plt.plot(x, TR, label='Total Revenue', color='red')
+
+# Add labels and title
+plt.xlabel('Number of Units Sold')
+plt.ylabel('Cost/Revenue (in $)')
+plt.title('Total Cost and Total Revenue')
+plt.legend()
+
+# Show the plot
+plt.grid(True)
+plt.show()
