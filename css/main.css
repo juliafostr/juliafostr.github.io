@@ -17,7 +17,11 @@ h1 {
   img {
   border: 10px solid rgb(75, 185, 102);
   width="300" height="300";
-  
 }
+p {
+      text-align: center;
+      color: #666;
+      line-height: 1.6;
+    }
     </body>
 </html>
