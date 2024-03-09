@@ -1,16 +1,23 @@
-<!DOCTYPE html>
+
 <link rel="stylesheet" type="text/css" href="https://github.com/">
 <html>
     <body>
         <h1>Hello World</h1>
 body {
-  background-color: lightblue;
-  font-family: "Times New Roman", Times, serif;
-      
+    background-color: rgb(219,249,252); 
+     }
+  font-family: 'Lexend Deca', sans-serif;
+  width: 800px; 
+  margin: auto;
+  color: #2E475D;
 }
- tr:hover 
-    {
-  background-color:rgb(245,245,245);
+table {
+  padding: 10px;
+  border-collapse: collapse;
+  width: 100%;
+  text-align: left;
+  color: white;
+  border-radius: 5px;
 }
 h1 {
   color: navy;
@@ -20,6 +27,10 @@ h1 {
   img {
   border: 10px solid rgb(75, 185, 102);
   width="300" height="300";
+}
+td, th {
+  border: none;
+  padding: 20px;
 }
 p {
       text-align: center;
