@@ -1,0 +1,35 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Search Form</title>
+</head>
+<body>
+        <h1>Google Search</h1>
+   <link rel="stylesheet" type="text/css" href="https://juliafostr.github.io/css/main.css">
+    <form action="https://www.google.com/search">
+        <fieldset>
+            <legend>Google Search</legend>
+            <label for="search">Search Query:</label>
+            <input type="text" id="search" name="q" required><br><br>
+
+            <label for="language">Language:</label>
+            <select id="language" name="lr">
+                <option value="lang_en">English</option>
+                <option value="lang_es">Spanish</option>
+                <option value="lang_fr">French</option>
+                <option value="lang_de">German</option>
+            </select><br><br>
+
+            <label>Search Options:</label><br>
+            <input type="checkbox" id="exact" name="as_epq" value="exact">
+            <label for="exact">Exact Match</label><br>
+            <input type="checkbox" id="exclude" name="as_eq" value="exclude">
+            <label for="exclude">Exclude</label><br><br>
+
+            <input type="submit" value="Search">
+        </fieldset>
+    </form>
+</body>
+</html>
