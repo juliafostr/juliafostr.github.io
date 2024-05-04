@@ -1,13 +1,18 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google Search Form</title>
+    <link rel="stylesheet" type="text/css" href="https://juliafostr.github.io/css/main.css">
+    <style>
+        body {
+            background-color: lightpink;
+        }
+    </style>
 </head>
 <body>
-        <h1>Google Search</h1>
-   <link rel="stylesheet" type="text/css" href="https://juliafostr.github.io/css/main.css">
+    <h1>Google Search</h1>
     <form action="https://www.google.com/search">
         <fieldset>
             <legend>Google Search</legend>
@@ -29,7 +34,17 @@
             <label for="exclude">Exclude</label><br><br>
 
             <input type="submit" value="Search">
+            <button type="button" onclick="clearForm()">Clear</button>
         </fieldset>
     </form>
+
+    <script>
+        function clearForm() {
+            document.getElementById("search").value = "";
+            document.getElementById("language").selectedIndex = 0;
+            document.getElementById("exact").checked = false;
+            document.getElementById("exclude").checked = false;
+        }
+    </script>
 </body>
 </html>
