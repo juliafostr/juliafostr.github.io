@@ -12,14 +12,14 @@
     </style>
 </head>
 <body>
-    <h1>Google Search</h1>
+    <h1><strong>Google Search</strong></h1>
     <form action="https://www.google.com/search">
         <fieldset>
-            <legend>Google Search</legend>
+            <legend><strong>Google Search</strong></legend>
             <label for="search">Search Box:</label>
             <input type="text" id="search" name="q" required><br><br>
 
-            <label for="language">Language:</label>
+            <label for="language"><strong>Language:</strong></label>
             <select id="language" name="lr">
                 <option value="lang_en">English</option>
                 <option value="lang_es">Spanish</option>
@@ -27,11 +27,22 @@
                 <option value="lang_de">German</option>
             </select><br><br>
 
-            <label>Search Options:</label><br>
+            <label><strong>Search Options:</strong></label><br>
             <input type="checkbox" id="exact" name="as_epq" value="exact">
             <label for="exact">Exact Match</label><br>
+            <br>
             <input type="checkbox" id="exclude" name="as_eq" value="exclude">
             <label for="exclude">Exclude</label><br><br>
+
+            <input type="checkbox" id="exclude" name="as_sitesearch" value="exclude">
+            <label for="Search Site">Narrow to Specific Site</label><br>
+            <br>
+            <input type="checkbox" id="exact" name="as_oq" value="exact">
+            <label for="Any Word">Any Word</label><br>
+            <br>
+            <input type="checkbox" id="exact" name="as_occt=url" value="exact">
+            <label for="URL Search">URL Search</label><br>
+            <br>
 
             <input type="submit" value="Search">
             <button type="button" onclick="clearForm()">Clear</button>
